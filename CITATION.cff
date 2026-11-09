@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this library, please cite it as below."
+title: "Business Management Reference Library: a clustered, DOI-verified BibTeX collection"
+type: dataset
+authors:
+  - family-names: Rana
+    given-names: Sudhir
+    orcid: "https://orcid.org/0000-0002-9910-1930"
+    affiliation: "College of Business, Liwa University, Abu Dhabi, United Arab Emirates"
+version: "1.0.0"
+doi: "10.5281/zenodo.24084354"
+date-released: "2026-10-17"
+license: CC0-1.0
+keywords:
+  - business management
+  - bibliography
+  - BibTeX
+  - FIIB Business Review
+  - Review of Management Literature
+  - literature review
+abstract: "A curated library of 351 business and management works (publications of Sudhir Rana, FIIB Business Review 2024 onward, and all Review of Management Literature chapters), clustered into 14 themes and released as BibTeX, RIS, CSV, Excel and a Claude skill."
