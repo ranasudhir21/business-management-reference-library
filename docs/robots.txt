@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ranasudhir21.github.io/business-management-reference-library/sitemap.xml
