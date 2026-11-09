@@ -1,0 +1,91 @@
+name: Build the public website
+
+on:
+  push:
+    paths:
+      - 'scripts/build_site.py'
+      - 'library/catalogue.csv'
+      - '.github/workflows/build-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install the site script
+        run: |
+          mkdir -p scripts
+          if [ ! -f scripts/build_site.py ]; then
+          base64 -d <<'B64' | gunzip > scripts/build_site.py
+          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
+          B64
+          fi
+      - name: Generate the site
+        run: python3 scripts/build_site.py
+      - name: Commit the site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts docs
+          git commit -m "Build website from the catalogue" || echo "Nothing to commit"
+          git push
